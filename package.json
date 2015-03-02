@@ -1,0 +1,41 @@
+{
+  "name": "coffee-links",
+  "main": "./lib/coffee-links",
+  "version": "0.0.0",
+  "description": "a code-links plugin that parses CoffeeScript.",
+  "activationCommands": {},
+  "providedServices": {
+    "code-links": {
+      "description": "Provides code links for CoffeeScript files.",
+      "versions": {
+        "0.2.0": "provideLinks"
+      }
+    }
+  },
+  "coffeelintConfig": {
+    "indentation": {
+      "value": 4
+    },
+    "max_line_length": {
+      "level": "error"
+    },
+    "no_empty_param_list": {
+      "level": "error"
+    },
+    "line_endings": {
+      "level": "error"
+    },
+    "no_stand_alone_at": {
+      "level": "error"
+    }
+  },
+  "repository": "https://github.com/atom/coffee-links",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+    "coffee-script": "^1.9.1",
+    "resolve": "^1.1.5"
+  }
+}
